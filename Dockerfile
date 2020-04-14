@@ -7,7 +7,7 @@ ENV FAUCET_EXCEPTION_LOG=STDERR
 
 RUN apk add --update supervisor && rm  -rf /tmp/* /var/cache/apk/*
 
-mkdir -p /var/log/supervisor
+RUN mkdir -p /var/log/supervisor
 
 COPY faucet.yaml /etc/faucet/
 
